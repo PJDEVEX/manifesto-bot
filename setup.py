@@ -16,5 +16,9 @@ setup(
         'streamlit==1.38.0',
         'pinecone-client==5.0.1',
         'numpy==1.26.4',
+        'langchain-huggingface==0.0.3',
+        'uuid==1.30',
+        'langchain-core==0.2.38',
+
     ]
 )
