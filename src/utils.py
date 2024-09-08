@@ -1,4 +1,4 @@
-from langchain.document_loaders import DirectoryLoader, PyPDFLoader
+from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 
@@ -7,7 +7,7 @@ def get_load_docs():
     Load all PDFs in the data directory
     """
     loader = DirectoryLoader(
-        path="../data",
+        path="./data",
         glob="*.pdf",
         loader_cls=PyPDFLoader,
         use_multithreading=True,
